@@ -5,7 +5,7 @@ export const filterStyles = createStyleSheet(({colors, device, border}) => ({
     paddingHorizontal: 10,
     paddingBottom: 10,
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#fff', // Add this line
   },
   filterItem: {
     flexDirection: 'row',

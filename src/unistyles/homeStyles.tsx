@@ -77,7 +77,9 @@ export const homeStyles = createStyleSheet(({ colors, device, border }) => ({
         width: '100%',
         height: '100%',
         borderRadius: border.full,
-        resizeMode: 'contain'
+        resizeMode: 'contain',
+        marginLeft: -3, // Adjusted to align with the golden circle
+
     },
     goldenCircle: {
         width: 50,

@@ -5,7 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashScreen from '../features/auth/SplashScreen';
 import LoginScreen from '../features/auth/LoginScreen';
 import { navigationRef } from '../utils/NavigationUtils';
-import UserBottomTab from '../features/tabs/UserBottomTab';
+import AnimatedTabs from '../features/tabs/AnimatedTabs';
+import RestaurantScreen from '../features/restaurants/RestaurantScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,8 @@ const Navigation:FC = () => {
       initialRouteName='SplashScreen'
       screenOptions={{headerShown: false}}>
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
+        <Stack.Screen name="RestaurantScreen" component={RestaurantScreen} />
+
         <Stack.Screen 
           name="LoginScreen"
           component={LoginScreen}
@@ -28,7 +31,7 @@ const Navigation:FC = () => {
             animation: 'fade',
           }}
           name="UserBottomTab"
-          component={UserBottomTab}
+          component={AnimatedTabs}
           />
         </Stack.Navigator>
         {/* Add other screens here */}  
