@@ -28,7 +28,7 @@ const SplashScreen: FC = () => {
         entering={FadeInDown.delay(400).duration(800)}>
         {/* #entering does is to delay the animation by 400ms and then animate it for 800ms when the component is mounted */}
         <Image
-          source={require('@assets/images/tree.png')}
+          source={require('@assets/images/tree4.png')}
           style={styles.treeImage} />
         <Text style={{
           marginTop: 16,

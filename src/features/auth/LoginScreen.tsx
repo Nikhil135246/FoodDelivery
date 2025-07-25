@@ -46,7 +46,7 @@ const LoginScreen: FC = () => {
       <StatusBar hidden={Platform.OS !== 'android'} />
       
       <Image
-        source={require('@assets/images/login.png')}
+        source={require('@assets/images/login2.jpg')}
         style={styles.cover}
       />
 

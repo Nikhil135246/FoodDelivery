@@ -31,7 +31,7 @@ const Graphics = () => {
     const backgroundColor = interpolateColor(
       colorProgress.value,
       [0, 1],
-      ["rgb(245, 130, 15)", Colors.active] // Orange to Green transition
+      ["rgba(245, 130, 15, 0.76)", 'rgba(1, 154, 80, 0.8)'] // Orange to Green transition
     )
     
     return {
