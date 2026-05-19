@@ -1,97 +1,153 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🍕 Food Delivery App
 
-# Getting Started
+A modern mobile food delivery application built with React Native, featuring real-time order tracking, restaurant browsing, and seamless user experience.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🎨 UI & Design
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+The app features a clean, user-friendly interface with:
+- **Intuitive Navigation**: Bottom tab navigation for easy access to key sections
+- **Smooth Animations**: Powered by React Native Reanimated and Lottie for engaging transitions
+- **Responsive Design**: Fully responsive layouts across all device sizes
+- **Modern Styling**: Linear gradients, blur effects, and custom SVG icons
+- **Vector Icons**: Comprehensive icon library for better visual communication
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## ✨ Features
 
-# OR using Yarn
-yarn start
-```
+- **🔐 Authentication**: Secure user login and registration
+- **🍽️ Restaurant Browsing**: Explore and filter restaurants
+- **🛒 Food Ordering**: Browse menus, customize items, and manage cart
+- **📍 Delivery Tracking**: Real-time live tracking of food delivery
+- **🔄 Reorder**: Quick reorder from previous orders
+- **🍴 Dining Mode**: In-app dining experience
+- **💾 Persistent Storage**: Redux with persistent state management
+- **⚡ Fast & Reliable**: Optimized performance with smooth animations
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 🛠️ Tech Stack
 
-### Android
+### Core Framework
+- **React Native** 0.80.0 - Cross-platform mobile development
+- **React** 19.1.0 - UI library
 
-```sh
-# Using npm
-npm run android
+### State Management & Storage
+- **Redux Toolkit** 2.8.2 - Predictable state container
+- **Redux Persist** 6.0.0 - Persist Redux state
+- **React Redux** 9.2.0 - React bindings for Redux
 
-# OR using Yarn
-yarn android
-```
+### Navigation
+- **React Navigation** 7.1.14 - Navigation library
+- **React Navigation Bottom Tabs** 7.4.2 - Tab navigation
+- **React Navigation Native Stack** 7.3.21 - Stack navigation
 
-### iOS
+### UI & Animations
+- **React Native Reanimated** 3.18.0 - Advanced animations
+- **Lottie React Native** 7.2.3 - JSON animations
+- **React Native Linear Gradient** 2.8.3 - Gradient backgrounds
+- **React Native Blur** 4.4.1 - Blur effects
+- **React Native SVG** 15.12.0 - SVG support
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+### Utilities & Libraries
+- **Axios** 1.10.0 - HTTP client
+- **React Native Vector Icons** 10.2.0 - Icon library
+- **React Native Fast Image** 8.6.3 - Fast image loading
+- **React Native Safe Area Context** 5.5.0 - Safe area support
+- **React Native Gesture Handler** 2.26.0 - Gesture handling
+- **React Native MMKV** 3.3.0 - Efficient storage
+- **React Native Unistyles** 2.43.0 - Styling solution
+- **UUID** 11.1.0 - Unique ID generation
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### Development Tools
+- **TypeScript** 5.0.4 - Type-safe development
+- **ESLint** 8.19.0 - Code linting
+- **Prettier** 2.8.8 - Code formatting
+- **Jest** 29.6.3 - Testing framework
+- **Babel** 7.25.2 - JavaScript transpiler
 
-```sh
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js >= 18
+- React Native environment setup ([Setup Guide](https://reactnative.dev/docs/set-up-your-environment))
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Install iOS dependencies (macOS only)
 bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
 bundle exec pod install
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+### Running the App
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+#### Android
+```bash
+npm run android
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+#### iOS
+```bash
+npm run ios
+```
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+### Start Development Server
+```bash
+npm start
+```
 
-## Step 3: Modify your app
+---
 
-Now that you have successfully run the app, let's make changes!
+## 📦 Available Scripts
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+- `npm start` - Start Metro bundler
+- `npm run android` - Run on Android emulator/device
+- `npm run ios` - Run on iOS simulator/device
+- `npm test` - Run tests
+- `npm run lint` - Run ESLint
+- `npm run generate-apk` - Generate APK release build
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+---
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 📁 Project Structure
 
-## Congratulations! :tada:
+```
+src/
+├── assets/          - Images, fonts, and media
+├── components/      - Reusable UI components
+├── features/        - Feature modules (auth, dining, delivery, etc.)
+├── navigation/      - Navigation configuration
+├── states/          - Redux store and slices
+├── types/           - TypeScript type definitions
+├── unistyles/       - Styling configuration
+└── utils/           - Utility functions
+```
 
-You've successfully run and modified your React Native App. :partying_face:
+---
 
-### Now what?
+## 🔧 Development Workflow
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+1. Start the Metro bundler: `npm start`
+2. Run the app: `npm run android` or `npm run ios`
+3. Edit files and save - changes auto-reload via Fast Refresh
+4. For full reload: Press `R` twice on Android or `R` on iOS
 
-# Troubleshooting
+---
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## 🤝 Contributing
 
-# Learn More
+Feel free to submit issues and enhancement requests!
 
-To learn more about React Native, take a look at the following resources:
+---
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 📄 License
+
+This project is private and proprietary.
